@@ -4,7 +4,7 @@ learn the Mixed-Integer Linear Programming (MILP) and its application in the opt
 
 ## tools
 
-use the gurobi library to solve the MILP problem.
+use the [gurobi](https://www.gurobi.com/) library to solve the MILP problem.
 
 ## reference
 
