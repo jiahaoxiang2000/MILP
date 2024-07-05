@@ -521,15 +521,15 @@ def getVariables(C):
         temp = temp.replace(" >=", " ")
         temp = temp.replace(" <=", " ")
         temp = temp.split()
-    for v in temp:
-        if not v.isdecimal():
-            V.add(v)
+        for v in temp:
+            if not v.isdecimal():
+                V.add(v)
     return V
 
 
 if __name__ == "__main__":
     ROUND_TO_COUNT = 12
-    print(" Minimize ")
+    print("Minimize ")
     print(" + ".join(["y" + str(i) for i in range(0, ROUND_TO_COUNT * 10)]))
     print("Subject To ")
     beginBits = R_At_Round(1) + L_At_Round(1)
